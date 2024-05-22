@@ -12,7 +12,7 @@ const App = () => {
    <View style= {{flex: 1,backgroundColor:'blue'}}></View>
    <View style= {{flex: 1,backgroundColor:'green'}}></View>
     </View>
-
+    {/*  */}
     </View>
   );
 }
