@@ -10,6 +10,7 @@ const App = () => {
     <View style= {{flex: 1,flexDirection: 'colum'}}>
    <View style= {{flex: 1,backgroundColor:'red'}}></View>
    <View style= {{flex: 1,backgroundColor:'blue'}}></View>
+   <View style= {{flex: 1,backgroundColor:'green'}}></View>
     </View>
 
     </View>
