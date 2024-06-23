@@ -16,7 +16,7 @@ export default function App(){
         color: 'green'
       }}>Fashion</Text>
       <Text style={{
-        fontSize:60,
+        fontSize:65,
         fontStyle:'bold',
         color:'black'
       }}>Syekh Yusuf</Text>
