@@ -9,7 +9,7 @@ export default function App(){
         fontStyle: 'italic',
       }}>Wanistore</Text>
       <Text style={{
-        fontSize:40,
+        fontSize:35,
         fontStyle:'italic',
         textDecorationLine:'underline',
         textShadowColor:'yellow',
