@@ -1,14 +1,13 @@
 
-import {StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import React from 'react';
+import ButtonComponent from './component/button/button';
 
 const App = () => {
   return (
     <View style= {{
       flex: 1,
       backgroundColor: '#000',
-      justifyContent: 'center',
-      alignItems: 'center'
     }}>
       <Image
         source={require('./assets/WandStore.png')}
@@ -17,7 +16,7 @@ const App = () => {
          height: '100%',
          position: 'absolute',
          top: 25,
-         opacity: 0.4,
+         opacity: 0.5,
          zIndex: -1,
         }}
         resizeMode='cover'
@@ -69,38 +68,15 @@ const App = () => {
           marginTop: 20,
           marginBottom: 50,
         }}>
-          <View style={{ marginHorizontal: 10}}>
-            <Text style={{
-              width: 100,
-              height: 50,
-              color: 'white',
-              backgroundColor: 'green',
-              textAlign: 'center',
-              lineHeight: 50,
-              fontSize: 20,
-              borderRadius: 10,
-              marginTop: 150,
-            }}>LOGIN</Text>
-            </View>
-            <View style={{ marginHorizontal: 20}}>
-              <Text style={{
-                width: 100,
-                height: 50,
-                color: 'white',
-                backgroundColor: 'grey',
-                textAlign: 'center',
-                lineHeight: 50, 
-                fontSize: 20,
-                borderRadius: 10,
-                marginTop: 150,
-              }}>REGISTER</Text>
-            </View>
-          </View>
+          
+          <ButtonComponent title= "Sign In" color= "green" />
+          <ButtonComponent title= "Sign Up" color= "grey" />
+         </View>
         </ScrollView>
       </View>
     );
   }
  
 
-export default App
+export default App;
 
