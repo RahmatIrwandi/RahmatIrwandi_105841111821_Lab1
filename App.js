@@ -1,38 +1,16 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
-
-const TextInputCostum = ({ placeholder, color }) => {
-  return ( 
-    <TextInput placeholder= {placeholder}
-      style={{
-       width: 200,
-       height: 60,
-       borderWidth: 2,
-       borderColor: 'gray',
-       justifyContent: 'center',
-       padding: 10,
-       margin: 10,
-    }}
-   />
-  )
-}
+import { View } from "react-native";
+import React from "react";
+import Login from './component/pages/login';
 
 const App = () => {
-  return (
-    <View style= {{
+  return(
+    <View style = {{
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
+      backgroundColor: 'white',
     }}>
-    <TextInputCostum
-    placeholder= "Email" 
-    color= "blue" />
-     <TextInputCostum
-    placeholder= "UserName" 
-    color= "blue" />
-    
-   </View>
-  )
-}
+      <Login/>
+    </View>
+  );
+};
 
-export default App
+export default App;
