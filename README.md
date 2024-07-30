@@ -1,4 +1,5 @@
 # Rahmat-Irwandi-105841111821
+<<<<<<< HEAD
 # Rahmat-Irwandi-105841111821
 # Rahmat-Irwandi-105841111821
 # Rahmat-Irwandi-105841111821
@@ -23,3 +24,5 @@
 # RahmatIrwandi_105841111821_Lab1
 # RahmatIrwandi_105841111821_Lab1
 # RahmatIrwandi_105841111821_Lab1
+=======
+>>>>>>> 17a40b44d92bf603c5809647ef52252fbb2f0432
