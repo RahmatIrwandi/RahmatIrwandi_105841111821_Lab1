@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import React from "react";
-import Login from './component/pages/login';
+import SignUp from './component/pages/SignUp';
 
 const App = () => {
   return(
@@ -8,7 +8,7 @@ const App = () => {
       flex: 1,
       backgroundColor: 'white',
     }}>
-      <Login/>
+      <SignUp/>
     </View>
   );
 };

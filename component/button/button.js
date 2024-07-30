@@ -13,7 +13,7 @@ const ButtonComponent = ({ title, color }) => {
             <Text style={{
                 width: 100,
                 height: 50,
-                color: 'black',
+                color: 'white',
                 backgroundColor: color,
                 textAlign: 'center',
                 lineHeight: 50,
