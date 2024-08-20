@@ -5,59 +5,59 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image } from 'reac
 const ButtonCustom = ({ text, color, onPress }) => {
     return (
         <TouchableOpacity onPress={onPress}
-        style = {[styles.button, {background: color}]}>
+            style={[styles.button, { background: color }]}>
         </TouchableOpacity>
     )
 }
-const TextInputCustom = ({placeholder, color, typeKeyboard, secureTextEntry}) => {
+const TextInputCustom = ({ placeholder, color, typeKeyboard, secureTextEntry }) => {
     return (
         <TextInput
-        keyboardType={typeKeyboard}
-        placeholder={placeholder}
-        secureTextEntry = {secureTextEntry}
+            keyboardType={typeKeyboard}
+            placeholder={placeholder}
+            secureTextEntry={secureTextEntry}
         />
     )
 }
 export default function Login() {
     return (
-        <View style = {styles.container}>
-            <Text style = {styles.title}>Login</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>Login</Text>
             <TextInputCustom
-            placeholder = "Email"
-            color = "black"
-            typeKeyboard="email-address"
+                placeholder="Email"
+                color="black"
+                typeKeyboard="email-address"
             />
             <TextInputCustom
-            placeholder = "Password"
-            color = "black"
-            typeKeyboard="default"
-            secureTextEntry={true}
+                placeholder="Password"
+                color="black"
+                typeKeyboard="default"
+                secureTextEntry={true}
             />
-            <Text style = {style.forgetPasswordText}>Forgot your Password?</Text>
+            <Text style={style.forgetPasswordText}>Forget your Password?</Text>
             <ButtonCustom
-            text = "LOGIN"
-            color="red"
-            onPress={() => {}}
+                text="LOGIN"
+                color="red"
+                onPress={() => { }}
             />
-            <Text style = {style.orText}> Or login with social account</Text>
-            <View style = {style.socialContainer }>
-                <TouchableOpacity onPress={() =>{}}>
-                <Image source = {require('./assets/facebook.png')}
-                style = {style.socialIcon}
-                />
+            <Text style={style.orText}> Or login with social account</Text>
+            <View style={style.socialContainer}>
+                <TouchableOpacity onPress={() => { }}>
+                    <Image source={require('./assets/facebook.png')}
+                        style={style.socialIcon}
+                    />
                 </TouchableOpacity>
             </View>
         </View>
     )
 }
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white'
     },
-    title:{
+    title: {
         fontSize: 30,
         fontWeight: 'bold',
         marginBottom: 20
@@ -73,7 +73,7 @@ const styles = StyleSheet.create ({
     forgetPasswordText: {
         alignSelf: 'flex-start',
         marginRight: 30,
-        marginBottom:20,
+        marginBottom: 20,
         color: 'gray'
     },
     button: {

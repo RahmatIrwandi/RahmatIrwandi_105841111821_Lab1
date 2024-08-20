@@ -4,11 +4,11 @@ import React from 'react'
 const ButtonComponent = ({ title, color }) => {
     return (
         <View style={{
-        marginHorizontal: 10,
+            marginHorizontal: 10,
 
-        alignItems: 'right',
-        justifyContent: 'start',
-        marginVertical: 10,
+            alignItems: 'right',
+            justifyContent: 'start',
+            marginVertical: 10,
         }}>
             <Text style={{
                 width: 100,
@@ -19,6 +19,7 @@ const ButtonComponent = ({ title, color }) => {
                 lineHeight: 50,
                 fontSize: 20,
                 borderRadius: 20,
+                top: 5,
             }}>{title}
             </Text>
         </View>
